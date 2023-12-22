@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC demo</title>
+    <style>
+        pre {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        #media {
+            max-width: 1280px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="media">
+        <h2>Media</h2>
+
+        <video id="video" autoplay="true" playsinline="true"></video>
+    </div>
+    <div id="objects">
+        <h2>Objects</h2>
+        <pre id="objects-log"></pre>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+
+</html>
