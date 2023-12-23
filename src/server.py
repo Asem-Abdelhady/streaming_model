@@ -91,7 +91,7 @@ async def offer(request):
 
     @pc.on("track")
     def on_track(track):
-        print("track")
+        print(track)
         if track.kind == "video":
             pc.addTrack(
                 VideoTransformTrack(
