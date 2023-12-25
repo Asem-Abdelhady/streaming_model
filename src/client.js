@@ -106,10 +106,11 @@
 // }
 
 // start();
-
+const ICE_SERVERS = [{ urls: "stun:stun.l.google.com:19302" }];
 function createPeerConnection() {
   var config = {
     sdpSemantics: "unified-plan",
+    iceServers: ICE_SERVERS,
   };
 
   pc = new RTCPeerConnection(config);
